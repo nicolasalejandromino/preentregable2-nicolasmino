@@ -165,7 +165,7 @@ main {
     border-radius: 0;
 }
 
-.card:hover a {
+.card-ini:hover a {
     transform: scale(1.1);
 }
 
