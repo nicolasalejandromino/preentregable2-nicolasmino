@@ -126,10 +126,13 @@ main {
 /*CARDS*/
 
 .card-container-ini {
+    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 29px;
     width: 60%;
 }
 .card-ini {
