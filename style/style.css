@@ -120,15 +120,17 @@ main {
 }
 .carousel-inner {
     max-width: 100% !important;
-    height: auto !important;
+    height: 100% !important;
 }
 
 /*CARDS*/
 
 .card-container-ini {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 29px;
+    width: 60%;
 }
 .card-ini {
     display: flex;
@@ -137,6 +139,7 @@ main {
     align-items: center;
     overflow: hidden;
     border-radius: 0;
+    width: 100%;
 }
 .card-titulo {
     display: flex;
