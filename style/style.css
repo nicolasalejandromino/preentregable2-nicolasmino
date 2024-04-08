@@ -129,7 +129,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
-    gap: 29px;
+    gap: 30px;
     width: 60%;
 }
 .card-ini {
