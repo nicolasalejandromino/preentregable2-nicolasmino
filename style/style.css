@@ -115,7 +115,7 @@ main {
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
 }
 .sec-carousel {
-    width: 60%;
+    width: 62%;
     margin-bottom: 40px;
 }
 .carousel-inner {
@@ -126,14 +126,13 @@ main {
 /*CARDS*/
 
 .card-container-ini {
-    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 29px;
-    width: 60%;
+    grid-gap: 38px;
+    width: 64%;
 }
 .card-ini {
     display: flex;
@@ -143,6 +142,7 @@ main {
     overflow: hidden;
     border-radius: 0;
     width: 100%;
+    margin: 10px;
 }
 .card-titulo {
     display: flex;
