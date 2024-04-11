@@ -96,7 +96,7 @@ header nav ul li a:before {
     position: absolute;
     top: 100%;
     left: 0;
-    transition: .5s;
+    transition: .7s;
 }
 header nav ul li:hover a:before {
     width: 50%;
@@ -190,6 +190,75 @@ main {
     transform: scale(1.1);
 }
 
+/*SECCION LO NUEVO*/
+
+.container-lo-nuevo {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    position: relative;
+}
+.container-lo-nuevo h2 {
+    color: #206f30;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+}
+.div-card-lo-nuevo {
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.card-lo-nuevo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 400px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.img-lo-nuevo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.card-lo-nuevo h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.card-lo-nuevo p {
+    margin: 0 10px 8px;
+    font-size: 12px;
+    font-weight: 300;
+    
+}
+.la-quiero-button {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px;
+    background-color: #75ad1b8e;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 1px 1px 8px #206f30;
+}
 /*FOOTER*/
 
 footer {
