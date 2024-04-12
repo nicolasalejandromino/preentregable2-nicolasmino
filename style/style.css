@@ -373,3 +373,34 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
+
+/*NOSOTROS*/
+
+.sec-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 300px;
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+.sec-nosotros h2 {
+    border-bottom: 1px solid #164d21;
+    color: #206f30;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.sec-nosotros p {
+    color: #206f30;
+    font-weight: 400;
+    font-size: 16px;
+}
+.div-img-nosotros {
+    width: 62%;
+}
+.div-img-nosotros img {
+    width: 100%;
+}
