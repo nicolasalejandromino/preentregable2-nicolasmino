@@ -32,28 +32,30 @@ body {
 header {
     background-color: #FAFBFD;
     width: 100%;
-    height: 240px;
+    height: 215px;
     left: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     position: fixed;
-    margin-bottom: 15px;
-    z-index: 1;
+    margin-bottom: 10px;
+    z-index: 1 !important;
+    padding-top: 10px;
 }
 header nav {
     display: flex;
     justify-content: center;
     width: 70%;
-    height: 38px;
+    height: 40px;
     position: relative;   
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 200px;
+    margin-top: 170px;
 }
 header nav ul {
     display: flex;
     position: absolute;
     justify-content: center;
+    padding-bottom: 20px;
 }
 header nav ul li {
     margin: 0 2.8rem;
@@ -64,7 +66,7 @@ header nav ul li a {
     color: #206f30;
 }
 .logo{
-    width: 12rem;
+    width: 11rem;
     position: absolute;
     transition: transform 0.5s;
 }
@@ -129,7 +131,7 @@ main {
 .carousel {
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
 }
-.sec-carousel {
+.sec-carouselindex {
     width: 62%;
     margin-bottom: 40px;
 }
@@ -199,7 +201,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 80px;
     position: relative;
 }
 .container-lo-nuevo h2 {
@@ -376,27 +378,46 @@ footer {
 
 /*NOSOTROS*/
 
+.sec-carouselnos {
+    width: 62%;
+    margin-bottom: 40px;
+    z-index: -1;
+}
 .sec-nosotros {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 300px;
     padding-top: 0;
     padding-bottom: 25px;
+    width: 62%;
 }
 .sec-nosotros h2 {
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid #164d21;
     color: #206f30;
     font-weight: 400;
     font-size: 1.8rem;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 55px;
+    margin-bottom: 40px;
 }
 .sec-nosotros p {
     color: #206f30;
     font-weight: 400;
     font-size: 16px;
+}
+.sec-nosotros ul {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.sec-nosotros ul li {
+    margin-left: 0;
+}
+.sec-nosotros ul li p span {
+    font-weight: 600;
 }
 .div-img-nosotros {
     width: 62%;
@@ -404,4 +425,90 @@ footer {
 
 .div-img-nosotros img {
     width: 100%;
+}
+.sec-nosotros .gracias {
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+/*CONTACTO*/
+
+.sec-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: -20px;
+}
+.div-datos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 0;
+    margin-left: 0;
+    width: 50%;
+}
+.div-datos h3 {
+    color: #164d21;
+    margin-bottom: 20px;
+    text-decoration: underline !important;
+    font-size: 23px;
+    font-weight: 400;
+}
+.div-datos ul {
+    padding-left: 0;
+}
+.div-datos ul li a {
+    color: #164d21;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+.div-datos ul li a:hover {
+    margin-left: 15px;
+    color: #2af753;
+}
+.icono-ubicacion {
+    scale: 1.2;
+}
+.div-map {
+    width: 100%;
+    margin-top: 20px;
+}
+.div-map iframe {
+    width: 90%;
+    height: 250px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    padding-right: 0;
+    align-items: center;
+    margin-top: 15px;
+}
+.form .campo, textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid rgb(190, 188, 188);
+    margin-bottom: 30px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.form textarea {
+    height: 240px;
+}
+.form .btn-enviar {
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    width: 160px;
+    background-color: #608f69;
+    border-radius: 4px;
+    color: #f9f9f9;
+    transition: all 0.8s ease;
+}
+.form .btn-enviar:hover {
+    background-color: #324e38;
 }
