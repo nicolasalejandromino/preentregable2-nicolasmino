@@ -199,14 +199,12 @@ main {
 /*SECCION LO NUEVO*/
 
 .container-lo-nuevo {
-    width: 80%;
-    height: auto;
+    width: 62%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
-    position: relative;
 }
 .container-lo-nuevo h2 {
     color: #206f30;
@@ -215,6 +213,7 @@ main {
     margin-bottom: 50px;
 }
 .div-card-lo-nuevo {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     display: grid;
@@ -222,7 +221,6 @@ main {
     gap: 40px;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 .card-lo-nuevo {
     display: flex;
@@ -373,11 +371,14 @@ footer {
 }
 
 .card-container {
+    width: 64%;
     display: flex;
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*NOSOTROS*/
