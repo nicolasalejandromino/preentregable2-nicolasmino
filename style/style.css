@@ -39,7 +39,7 @@ header {
     flex-direction: column;
     position: fixed;
     margin-bottom: 10px;
-    z-index: 1 !important;
+    z-index: 4 !important;
     padding-top: 10px;
 }
 header nav {
@@ -64,6 +64,7 @@ header nav ul li {
 header nav ul li a {
     font-size: 17px;
     color: #206f30;
+    transition: 0.3s;
 }
 .logo{
     width: 11rem;
@@ -86,6 +87,9 @@ header nav ul li a {
 .div-menu{
     float: right;
     display: none;
+}
+header nav ul li a:hover {
+    color: #43db61;
 }
 
 /*ANIMACION MENU*/
@@ -511,4 +515,75 @@ footer {
 }
 .form .btn-enviar:hover {
     background-color: #324e38;
+}
+
+/*CONSEJOS*/
+
+.div-carouselcon {
+    width: 62%;
+    margin-bottom: 40px;
+    z-index: -1;
+}
+.sec-accordion {
+    display: flex;
+    justify-content: center;
+    width: 62%;
+    flex-direction: column;
+    align-items: center;
+}
+.accordion {
+    margin-top: 40px;
+}
+.sec-accordion h1 {
+    margin-top: 15px;
+    color: #206f30;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.sec-accordion p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #206f30;
+    font-weight: 400;
+    font-size: 16px;
+}
+.sec-accordion p a {
+    color: #206f30;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.sec-accordion p a:hover {
+    color: #2ff056;
+    transform: scale(1.1);
+}
+.sec-accordion .accordion {
+    width: 100%;
+}
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+}
+.img-acordeon {
+    margin-bottom: 15px;
+    width: 200px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+.img-acordeon img {
+    width: 100%;
+}
+.ul-acordion li {
+    color: #206f30;
+    list-style-type: circle;
+}
+.span-acordion {
+    font-weight: bold;
+}
+.accordion-button {
+    color: #206f30;
+    border: 1px solid #c7f0cf;
+}
+.sec-accordion .p-gracias {
+    margin-top: 50px;
 }
