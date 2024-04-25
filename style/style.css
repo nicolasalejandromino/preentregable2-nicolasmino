@@ -212,7 +212,7 @@ main {
 .div-card-lo-nuevo {
     display: flex;
     flex-wrap: wrap;
-    width: 64%;
+    width: 70%;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
@@ -303,7 +303,7 @@ footer {
 .div-card-plantas {
     display: flex;
     flex-wrap: wrap;
-    width: 64%;
+    width: 70%;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
