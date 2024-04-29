@@ -32,7 +32,7 @@ body {
 header {
     background-color: #FAFBFD;
     width: 100%;
-    height: 215px;
+    height: 185px;
     left: 0;
     display: flex;
     align-items: center;
@@ -42,10 +42,47 @@ header {
     z-index: 4 !important;
     padding-top: 10px;
 }
-header nav {
+.menu-desplegable {
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.menu-desplegable ul {
+    
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-menu {
+    background-color: #eef8f0;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-menu li {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
-    width: 70%;
+    align-items: center;
+}
+.dropdown-menu li a {
+    color: #164d21;
+}
+.dropdown-item {
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    display: none;
+    justify-content: center;
+    width: 100%;
     height: 40px;
     position: relative;   
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -67,7 +104,7 @@ header nav ul li a {
     transition: 0.3s;
 }
 .logo{
-    width: 11rem;
+    width: 8rem;
     position: absolute;
     transition: transform 0.5s;
 }
@@ -84,6 +121,7 @@ header nav ul li a {
     bottom: 10px;
     width: 100%;
 }
+
 .div-menu{
     float: right;
     display: none;
@@ -94,28 +132,15 @@ header nav ul li a:hover {
 
 /*ANIMACION MENU*/
 
-header nav ul li a:before {
-    content: '';
-    width: 0px;
-    height: 2px;
-    background: #206f30;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transition: .7s;
-}
-header nav ul li:hover a:before {
-    width: 50%;
-    transform: translateX(100%);
-}
-header nav ul li:hover {
-    font-size: 23px;
-    transition: .5s;
-}
 .logo:hover {
     transform: scale(1.08);
 }
-
+.dropdown-menu li:hover {
+    background-color: #206f30;
+}
+.dropdown-menu li a:hover {
+    background-color: #206f30;
+}
 /*MAIN*/
 
 main {
@@ -125,7 +150,7 @@ main {
     justify-content: center;
     flex-direction: column;
     top: 320px;
-    margin-top: 260px;
+    margin-top: 210px;
     margin-bottom: 30px;
     padding-bottom: 30px;
 }
@@ -246,11 +271,11 @@ footer {
     transition: text-shadow 0.3s;
 }
 .logo-chico {
-    width: 8rem;
+    width: 6rem;
     transition: transform 0.5s;
 }
 .nav-con-foot {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     margin-left: 15px;
@@ -460,7 +485,7 @@ footer {
     height: 35px;
 }
 .div-datos ul li a:hover {
-    margin-left: 15px;
+    margin-left: 14px;
     color: #2af753;
 }
 .icono-ubicacion {
@@ -591,6 +616,79 @@ footer {
 /*TABLET*/
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
+    main {
+        margin-top: 260px;
+    }
+    .menu-desplegable {
+        display: none;
+    }
+    header {
+        height: 215px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    header nav {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 40px;
+        position: relative;   
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 170px;
+    }
+    header nav ul {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    .li-inicio {
+        display: none;
+    }
+    header nav ul li {
+        margin: 0 2.8rem;
+        position: relative;
+    }
+    header nav ul li a {
+        font-size: 17px;
+        color: #206f30;
+        transition: 0.3s;
+    }
+    .logo{
+        width: 11rem;
+    }
+    .logo-container {
+        bottom: 10px;
+        width: 100%;
+    }
+    
+    header nav ul li a:hover {
+        color: #43db61;
+    }
+    header nav ul li a:before {
+        content: '';
+        width: 0px;
+        height: 2px;
+        background: #206f30;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: .7s;
+    }
+    header nav ul li:hover a:before {
+        width: 50%;
+        transform: translateX(100%);
+    }
+    header nav ul li:hover {
+        font-size: 23px;
+        transition: .5s;
+    }
+    .logo:hover {
+        transform: scale(1.08);
+    }
+    .li-inicio {
+        display: none;
+    }
     .sec-carouselindex {
         width: 80%;
         margin-bottom: 40px;
@@ -602,6 +700,16 @@ footer {
     .card-ini {
         width: 14rem;
         margin: 0px;
+    }
+    .nav-con-foot {
+        display: flex;
+    }
+    .logo-chico {
+        width: 8rem;
+    }
+    .div-logo-redes a svg {
+        width: 50px;
+        height: 50px;
     }
     .sec-carouselnos {
         width: 80%;
@@ -657,6 +765,9 @@ footer {
 @media only screen and (min-width: 992px) {
     
     /*Header*/
+    .menu-desplegable {
+        display: none;
+    }
 
     header {
         height: 215px;
@@ -678,6 +789,9 @@ footer {
         justify-content: center;
         padding-bottom: 20px;
     }
+    .li-inicio {
+        display: none;
+    }
     header nav ul li {
         margin: 0 2.8rem;
         position: relative;
@@ -695,11 +809,49 @@ footer {
         width: 100%;
     }
     .div-menu{
+        display: none;
     }
+    header nav ul li a:hover {
+        color: #43db61;
+    }
+    header nav ul li a:before {
+        content: '';
+        width: 0px;
+        height: 2px;
+        background: #206f30;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transition: .7s;
+    }
+    header nav ul li:hover a:before {
+        width: 50%;
+        transform: translateX(100%);
+    }
+    header nav ul li:hover {
+        font-size: 23px;
+        transition: .5s;
+    }
+    .logo:hover {
+        transform: scale(1.08);
+    }
+
 
     /*Footer*/
 
+    .nav-con-foot {
+        display: flex;
+    }
+    .logo-chico {
+        width: 8rem;
+    }
+    
+
     /*Main Index*/
+
+    main {
+        margin-top: 260px;
+    }
 
     .sec-carouselindex {
         width: 62%;
@@ -789,24 +941,38 @@ footer {
 
     /*Main Contacto*/
 
+    .main-contacto {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 320px;
+        padding: 40px;
+        margin-top: 260px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        flex-direction: row;
+    }
+
     .sec-contacto {
-        width: 70%;
-        margin-top: -20px;
+        display: flex;
         flex-direction: column;
+        width: 50%;
+        margin-top: -20px;
     }
     .div-datos {
+        display: flex;
         flex-direction: column;
-        padding: 20px;
         padding-left: 0;
         margin-left: 0;
-        width: 50%;
+        width: 100%;
     }
     .div-datos h3 {
         margin-bottom: 20px;
         font-size: 23px;
     }
     .div-datos ul {
-        padding-left: 0;
+        padding: 0;
     }
     .div-datos ul li img {
         width: 30px;
@@ -816,26 +982,37 @@ footer {
         width: 30px;
         height: 30px;
     }
-    .div-map {
-        display: block;
+    .div-datos ul li {
+        display: flex;
         width: 100%;
+    }
+    .div-datos ul li a {
+        font-size: 18px;
+    }
+    .div-map {
+        display: flex;
+        width: 80%;
         margin-top: 20px;
+        margin-left: 320px;
     }
     .div-map iframe {
-        width: 90%;
+        width: 80%;
         height: 250px;
     }
     .form {
         width: 50%;
         padding: 20px;
-        padding-right: 0
+        padding-right: 150px;
+        padding-left: 0;
+        margin-left: -15px;
+        margin-top: -10px;
     }
     .form .campo, textarea {
-        width: 100%;
+        width: 70%;
         padding: 15px 10px;
         margin-bottom: 30px;
     }
     .form textarea {
-        height: 240px;
+        height: 260px;
     }
 }
