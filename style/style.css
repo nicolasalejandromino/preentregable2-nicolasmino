@@ -136,8 +136,8 @@ main {
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
 }
 .sec-carouselindex {
-    width: 62%;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 .carousel-inner {
     max-width: 100% !important;
@@ -152,8 +152,8 @@ main {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 38px;
-    width: 64%;
+    gap: 15px;
+    width: 100%;
 }
 .card-ini {
     display: flex;
@@ -162,8 +162,8 @@ main {
     align-items: center;
     overflow: hidden;
     border-radius: 0;
-    width: 100%;
-    margin: 10px;
+    width: 25rem;
+    margin: 5px;
 }
 .card-titulo {
     display: flex;
@@ -213,7 +213,7 @@ main {
 .div-card-lo-nuevo {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
@@ -304,19 +304,19 @@ footer {
 .div-card-plantas {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     gap: 40px;
-    padding: 10px;
+    padding: 30px;
 }
 .card-plantas {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 240px;
-    height: 340px;
+    width: 300px;
+    height: 380px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -324,17 +324,17 @@ footer {
     transition: 0.8s;
 }
 .card-plantas h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .card-plantas p {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
 }
 .img-con-plantas {
     width: 100%;
-    height: 195px;
+    height: 220px;
     position: relative;
     z-index: 1;
 }
@@ -366,8 +366,8 @@ footer {
 /*NOSOTROS*/
 
 .sec-carouselnos {
-    width: 62%;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 10px;
     z-index: -1;
 }
 .sec-nosotros {
@@ -376,8 +376,8 @@ footer {
     align-items: center;
     flex-direction: column;
     padding-top: 0;
-    padding-bottom: 25px;
-    width: 62%;
+    padding-bottom: 15px;
+    width: 90%;
 }
 .sec-nosotros h2 {
     display: flex;
@@ -386,8 +386,8 @@ footer {
     color: #206f30;
     font-weight: 400;
     font-size: 1.8rem;
-    margin-top: 55px;
-    margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 25px;
 }
 .sec-nosotros p {
     color: #206f30;
@@ -407,9 +407,8 @@ footer {
     font-weight: 600;
 }
 .div-img-nosotros {
-    width: 62%;
+    width: 100%;
 }
-
 .div-img-nosotros img {
     width: 100%;
 }
@@ -424,22 +423,23 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin-top: -20px;
+    width: 100%;
+    margin-top: -10px;
 }
 .div-datos {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    padding-left: 0;
+    padding-left: 5px;
     margin-left: 0;
-    width: 50%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .div-datos h3 {
     color: #164d21;
     margin-bottom: 20px;
     text-decoration: underline !important;
-    font-size: 23px;
+    font-size: 25px;
     font-weight: 400;
 }
 .div-datos ul {
@@ -449,6 +449,15 @@ footer {
     color: #164d21;
     margin-left: 10px;
     transition: all 0.5s ease;
+    font-size: 20px;
+}
+.div-datos ul li img {
+    width: 35px;
+    height: 35px;
+}
+.div-datos ul li svg {
+    width: 35px;
+    height: 35px;
 }
 .div-datos ul li a:hover {
     margin-left: 15px;
@@ -458,19 +467,20 @@ footer {
     scale: 1.2;
 }
 .div-map {
-    width: 100%;
+    display: none;
+    width: 90%;
     margin-top: 20px;
+    padding: 25px;
 }
 .div-map iframe {
-    width: 90%;
-    height: 250px;
+    width: 100%;
+    height: 200px;
 }
 .form {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    padding: 20px;
-    padding-right: 0;
+    width: 100%;
+    padding: 30px;
     align-items: center;
     margin-top: 15px;
 }
@@ -503,19 +513,19 @@ footer {
 /*CONSEJOS*/
 
 .div-carouselcon {
-    width: 62%;
-    margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 30px;
     z-index: -1;
 }
 .sec-accordion {
     display: flex;
     justify-content: center;
-    width: 62%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
 }
 .accordion {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .sec-accordion h1 {
     margin-top: 15px;
@@ -524,11 +534,12 @@ footer {
     font-size: 1.8rem;
 }
 .sec-accordion p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     color: #206f30;
     font-weight: 400;
     font-size: 16px;
+    padding: 25px;
 }
 .sec-accordion p a {
     color: #206f30;
@@ -569,4 +580,262 @@ footer {
 }
 .sec-accordion .p-gracias {
     margin-top: 50px;
+}
+
+/*MEDIA QUERYS*/
+
+@media only screen and (max-width: 575px) {
+
+}
+
+/*TABLET*/
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .sec-carouselindex {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .card-container-ini {
+        width: 80%;
+        gap: 54px;
+    }    
+    .card-ini {
+        width: 14rem;
+        margin: 0px;
+    }
+    .sec-carouselnos {
+        width: 80%;
+    }
+    .sec-nosotros {
+        width: 80%;
+    }
+    .div-img-nosotros {
+        width: 80%;
+    }
+    .sec-contacto {
+        width: 80%;
+    }
+    .div-datos {
+        padding: 0;
+    }
+    .div-datos h3 {
+        font-size: 18px;
+    }
+    .div-datos ul li a {
+        font-size: 13px;
+    }
+    .div-datos ul li img {
+        width: 20px;
+        height: 20px;
+    }
+    .div-datos ul li svg {
+        width: 20px;
+        height: 20px;
+    }
+    .div-map {
+        margin-top: 10px;
+    }
+    .div-map iframe {
+        height: 220px;
+    }
+    .form textarea {
+        height: 150px;
+    }
+    .div-carouselcon {
+        width: 80%;
+    }
+    .sec-accordion {
+        width: 80%;
+    }
+    .div-card-plantas {
+        width: 90%;
+    }
+}
+
+/*DESKTOP*/
+
+@media only screen and (min-width: 992px) {
+    
+    /*Header*/
+
+    header {
+        height: 215px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+    }
+    header nav {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        height: 40px;
+        position: relative;   
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+        margin-top: 170px;
+    }
+    header nav ul {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    header nav ul li {
+        margin: 0 2.8rem;
+        position: relative;
+    }
+    header nav ul li a {
+        font-size: 17px;
+        color: #206f30;
+        transition: 0.3s;
+    }
+    .logo{
+        width: 11rem;
+    }
+    .logo-container {
+        bottom: 10px;
+        width: 100%;
+    }
+    .div-menu{
+    }
+
+    /*Footer*/
+
+    /*Main Index*/
+
+    .sec-carouselindex {
+        width: 62%;
+        margin-bottom: 40px;
+    }
+    .card-container-ini {
+        gap: 38px;
+        width: 64%;
+    }
+    .card-ini {
+        width: 18rem;
+        margin: 10px;
+    }
+    .div-card-lo-nuevo {
+        width: 70%;
+        gap: 40px;
+        padding: 10px;
+    }
+
+
+    /*Main Plantas*/
+
+    .div-card-plantas {
+        width: 70%;
+        gap: 40px;
+        padding: 10px;
+    }
+    .card-plantas {
+        width: 240px;
+        height: 340px;
+    }
+    .img-con-plantas {
+        width: 100%;
+        height: 195px;
+    }
+    .card-plantas h3 {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .card-plantas p {
+        font-size: 12px;
+    }
+
+
+    /*Main Consejos*/
+
+    .div-carouselcon {
+        width: 62%;
+        margin-bottom: 40px;
+    }
+    .sec-accordion {
+        width: 62%;
+    }
+    .accordion {
+        margin-top: 40px;
+    }
+    .sec-accordion p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+
+
+    /*Main Nosotros*/
+
+    .sec-carouselnos {
+        width: 62%;
+        margin-bottom: 40px;
+    }
+    .sec-nosotros {
+        width: 62%;
+    }
+    .sec-nosotros h2 {
+        margin-top: 55px;
+        margin-bottom: 40px;
+    }
+    .sec-nosotros p {
+        font-size: 16px;
+    }
+    .div-img-nosotros {
+        width: 62%;
+    }
+    .sec-nosotros .gracias {
+        margin-top: 40px;
+    }
+
+
+    /*Main Contacto*/
+
+    .sec-contacto {
+        width: 70%;
+        margin-top: -20px;
+        flex-direction: column;
+    }
+    .div-datos {
+        flex-direction: column;
+        padding: 20px;
+        padding-left: 0;
+        margin-left: 0;
+        width: 50%;
+    }
+    .div-datos h3 {
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+    .div-datos ul {
+        padding-left: 0;
+    }
+    .div-datos ul li img {
+        width: 30px;
+        height: 30px;
+    }
+    .div-datos ul li svg {
+        width: 30px;
+        height: 30px;
+    }
+    .div-map {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .div-map iframe {
+        width: 90%;
+        height: 250px;
+    }
+    .form {
+        width: 50%;
+        padding: 20px;
+        padding-right: 0
+    }
+    .form .campo, textarea {
+        width: 100%;
+        padding: 15px 10px;
+        margin-bottom: 30px;
+    }
+    .form textarea {
+        height: 240px;
+    }
 }
