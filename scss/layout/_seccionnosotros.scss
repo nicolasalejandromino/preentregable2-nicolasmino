@@ -1,0 +1,50 @@
+//SECCION NOSOTROS
+
+.sec-nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 15px;
+    width: 90%;
+    h2{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #164d21;
+        color: #206f30;
+        font-weight: 400;
+        font-size: 1.8rem;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
+    p{
+        color: #206f30;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    ul{
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        li{
+            margin-left: 0;
+            p{
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .gracias{
+        font-weight: 600;
+        margin-top: 40px;
+    }
+}
+.div-img-nosotros{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}

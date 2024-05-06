@@ -1,0 +1,78 @@
+footer{
+    background-color: #206f30;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    z-index: 1;
+    margin-top: auto;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    padding: 30px;
+}
+.div-logo-footer{
+    display: flex;
+    position: relative;
+    padding-right: 15px;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        transition: text-shadow 0.3s;
+        img{
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+.logo-chico{
+    width: 6rem;
+    transition: transform 0.5s;
+}
+.nav-con-foot{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    padding-left: 15px;
+    border-left: 2px solid #FAFBFD;
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0px;
+        li{
+            a{
+                color: #FAFBFD;
+                font-weight: 450;
+                transition: text-shadow 0.3s;
+                transition: margin-left 0.5s;
+                &:hover{
+                    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+                    margin-left: 7px;
+                }
+            }
+        }
+    }
+}
+.div-redes{
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 30px;
+    h6{
+        color: #FAFBFD;
+        font-weight: 600;
+        cursor: default;
+    }
+}
+.div-logo-redes{
+    svg{
+        transition: filter 0.5s;
+        &:hover{
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+        }
+    }
+} 

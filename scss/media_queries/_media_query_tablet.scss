@@ -1,0 +1,159 @@
+//MEDIA QUERY TABLET
+@media only screen and (min-width: 576px) and (max-width: 991px){
+    //MAIN
+    main{
+        margin-top: 260px;
+    }
+    .menu-desplegable{
+        display: none;
+    }
+    //HEADER
+    header{
+        height: 215px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        nav{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            position: relative;   
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 170px;
+            ul{
+                display: flex;
+                position: absolute;
+                justify-content: center;
+                padding-bottom: 20px;
+                li{
+                    margin: 0 2.8rem;
+                    position: relative;
+                    &:hover{
+                        width: 50%;
+                        transform: translateX(100%);
+                        font-size: 23px;
+                        transition: .5s;
+                    }
+                    a{
+                        font-size: 17px;
+                        color: #206f30;
+                        transition: 0.3s;
+                        &:hover{
+                            color: #43db61;
+                        }
+                        &:before{
+                            content: '';
+                            width: 0px;
+                            height: 2px;
+                            background: #206f30;
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            transition: .7s;
+                            width: 50%;
+                            transform: translateX(100%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .li-inicio{
+        display: none;
+    }
+    .logo{
+        width: 11rem;
+        &:hover{
+            transform: scale(1.08);
+        }
+    }
+    .logo-container{
+        bottom: 10px;
+        width: 100%;
+    }
+    //INDEX
+    .sec-carouselindex{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .card-container-ini{
+        width: 80%;
+        gap: 54px;
+    }    
+    .card-ini{
+        width: 14rem;
+        margin: 0px;
+    }
+    //FOOTER
+    .nav-con-foot{
+        display: flex;
+    }
+    .logo-chico{
+        width: 8rem;
+    }
+    .div-logo-redes{
+        a{
+            svg{
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    //SECCION NOSOTROS
+    .sec-carouselnos{
+        width: 80%;
+    }
+    .sec-nosotros{
+        width: 80%;
+    }
+    .div-img-nosotros{
+        width: 80%;
+    }
+    //SECCION CONTACTO
+    .sec-contacto{
+        width: 80%;
+    }
+    .div-datos{
+        padding: 0;
+        h3{
+            font-size: 18px;
+        }
+        ul{
+            li{
+                a{
+                    font-size: 13px;
+                }
+                img{
+                    width: 20px;
+                    height: 20px;
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+    .div-map{
+        margin-top: 10px;
+        iframe{
+            height: 220px;
+        }
+    }
+    .form{
+        textarea{
+            height: 150px;
+        }
+    }
+    //SECCION CONSEJOS
+    .div-carouselcon{
+        width: 80%;
+    }
+    .sec-accordion{
+        width: 80%;
+    }
+    //SECCION PLANTAS
+    .div-card-plantas{
+        width: 90%;
+    }
+}
