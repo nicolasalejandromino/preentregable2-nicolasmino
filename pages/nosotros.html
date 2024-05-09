@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potus | Nosotros</title>
+    <!--BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--CSS-->
     <link rel="stylesheet" href="../style/style.css">
+    <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -41,7 +45,7 @@
     </nav>
 </header>
     <main class="">
-      <section class="sec-carouselnos">
+      <section class="sec-carouselnos" data-aos="fade-up"data-aos-anchor-placement="top-bottom">
         <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -57,27 +61,27 @@
         </div>
       </section>  
       <section class="sec-nosotros">
-        <h2>NOSOTROS</h2>
-        <p>Bienvenidos a nuestra comunidad apasionada por las plantas. En POTUS, creemos que la naturaleza es una fuente inagotable de inspiración y bienestar. Nuestra misión es compartir ese amor por las plantas y fomentar un estilo de vida más verde y conectado con la naturaleza.</p>
-        <h2>¿Quiénes Somos?</h2>
-        <p>Somos un equipo de entusiastas de las plantas, jardineros aficionados y amantes de la naturaleza. Nos une la pasión por cultivar, aprender y compartir conocimientos sobre todo tipo de vegetación. Desde suculentas hasta árboles frutales, estamos aquí para explorar juntos el mundo botánico.</p>
-        <h2>Nuestra Historia</h2>
-        <p>Hace más de una década, comenzamos como un pequeño grupo de amigos que compartían esquejes y consejos sobre cómo cuidar nuestras plantas de interior. Con el tiempo, nuestra comunidad creció y se convirtió en POTUS. Hoy en día, seguimos aprendiendo, experimentando y disfrutando de la belleza de las plantas.</p>
-        <h2>Nuestros Compromisos</h2>
+        <h2 data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">NOSOTROS</h2>
+        <p data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">Bienvenidos a nuestra comunidad apasionada por las plantas. En POTUS, creemos que la naturaleza es una fuente inagotable de inspiración y bienestar. Nuestra misión es compartir ese amor por las plantas y fomentar un estilo de vida más verde y conectado con la naturaleza.</p>
+        <h2 data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">¿Quiénes Somos?</h2>
+        <p data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">Somos un equipo de entusiastas de las plantas, jardineros aficionados y amantes de la naturaleza. Nos une la pasión por cultivar, aprender y compartir conocimientos sobre todo tipo de vegetación. Desde suculentas hasta árboles frutales, estamos aquí para explorar juntos el mundo botánico.</p>
+        <h2 data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">Nuestra Historia</h2>
+        <p data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">Hace más de una década, comenzamos como un pequeño grupo de amigos que compartían esquejes y consejos sobre cómo cuidar nuestras plantas de interior. Con el tiempo, nuestra comunidad creció y se convirtió en POTUS. Hoy en día, seguimos aprendiendo, experimentando y disfrutando de la belleza de las plantas.</p>
+        <h2 data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">Nuestros Compromisos</h2>
         <ul>
-          <li>
+          <li data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">
             <p><span>Calidad</span>: Seleccionamos cuidadosamente las plantas y productos que ofrecemos para garantizar la mejor calidad.</p>
           </li>
-          <li>
+          <li data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">
             <p><span>Sostenibilidad</span>: Nos preocupamos por el medio ambiente y promovemos prácticas sostenibles en el cuidado de las plantas.</p>
           </li>
-          <li>
+          <li data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">
             <p><span>Comunidad</span>: Queremos ser un espacio donde todos puedan compartir sus experiencias y aprender juntos.</p>
           </li>
         </ul>
-        <p class="gracias">¡Gracias por ser parte de nuestra comunidad verde! Si tienes alguna pregunta o necesitas asesoramiento sobre tus plantas, no dudes en contactarnos.</p>
+        <p class="gracias" data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">¡Gracias por ser parte de nuestra comunidad verde! Si tienes alguna pregunta o necesitas asesoramiento sobre tus plantas, no dudes en contactarnos.</p>
       </section>
-      <div class="div-img-nosotros">
+      <div class="div-img-nosotros" data-aos="fade-up"data-aos-anchor-placement="bottom-bottom">
         <img src="../img/vivero-nosotros4.png" alt="imagen vivero staff">
       </div>
     </main>
@@ -118,5 +122,9 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

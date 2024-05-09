@@ -50,11 +50,39 @@
         }
     }
     .logo-container{
-        bottom: 10px;
+        bottom: 5px;
         width: 100%;
     }
     .div-menu{
         display: none;
+    }
+    @keyframes anuncio{
+        0%{
+            transform: translateX(1600px);
+        }
+        100%{
+            transform: translateX(-1500px);
+        }
+    }
+    .anuncio{
+        justify-content: space-between;
+        background-color: #1cb43a;
+        z-index: 10;
+        color: white;
+        display: flex;
+        width: 100%;
+        height: 20px;
+        font-size: 12px;
+        overflow: hidden;
+        flex-direction: row;
+        p{
+            width: 100%;
+            transform: translateX(1600px);
+            animation-name: anuncio;
+            animation-duration: 35s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
     }
     //FOOTER
     .nav-con-foot{
@@ -73,7 +101,7 @@
     }
     //MAIN INDEX
     main{
-        margin-top: 260px;
+        margin-top: 240px;
     }
 
     .sec-carouselindex{
