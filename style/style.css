@@ -197,7 +197,7 @@ main {
   width: 25rem;
   margin: 5px;
 }
-.card-ini:hover {
+.card-ini a:hover {
   transform: scale(1.1);
 }
 
@@ -321,7 +321,8 @@ main {
 }
 
 footer {
-  background-color: #206f30;
+  background: rgb(32, 111, 48);
+  background: linear-gradient(90deg, rgb(32, 111, 48) 0%, rgb(76, 164, 79) 84%);
   display: flex;
   align-items: center;
   width: 100%;
@@ -611,15 +612,19 @@ footer {
 
 @media only screen and (min-width: 576px) and (max-width: 991px) {
   main {
-    margin-top: 260px;
+    margin-top: 180px;
   }
   .menu-desplegable {
     display: none;
   }
   header {
-    height: 215px;
+    display: flex;
+    height: 130px;
     margin-bottom: 10px;
     padding-top: 10px;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
   header nav {
     display: flex;
@@ -627,8 +632,8 @@ footer {
     width: 100%;
     height: 40px;
     position: relative;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 170px;
+    margin-top: 70px;
+    box-shadow: none;
   }
   header nav ul {
     display: flex;
@@ -637,46 +642,34 @@ footer {
     padding-bottom: 20px;
   }
   header nav ul li {
-    margin: 0 2.8rem;
+    margin: 0 1rem;
     position: relative;
-  }
-  header nav ul li:hover {
-    width: 50%;
-    transform: translateX(100%);
-    font-size: 23px;
-    transition: 0.5s;
+    right: 100px;
   }
   header nav ul li a {
-    font-size: 17px;
+    font-size: 14px;
     color: #206f30;
-    transition: 0.3s;
+    transition: 0.8s;
   }
   header nav ul li a:hover {
-    color: #43db61;
-  }
-  header nav ul li a:before {
-    content: "";
-    width: 0px;
-    height: 2px;
-    background: #206f30;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transition: 0.7s;
-    width: 50%;
-    transform: translateX(100%);
+    color: #3fca3a;
+    transform: scale(1.5);
+    font-size: 18px;
+    font-weight: 600;
+    filter: brightness(150%);
   }
   .li-inicio {
     display: none;
   }
   .logo {
-    width: 11rem;
+    width: 9rem;
   }
   .logo:hover {
     transform: scale(1.08);
   }
   .logo-container {
-    bottom: 10px;
+    left: -85px;
+    bottom: 75px;
     width: 100%;
   }
   .sec-carouselindex {
@@ -696,10 +689,6 @@ footer {
   }
   .logo-chico {
     width: 8rem;
-  }
-  .div-logo-redes a svg {
-    width: 50px;
-    height: 50px;
   }
   .sec-carouselnos {
     width: 80%;
@@ -777,31 +766,17 @@ footer {
     margin: 0 2.8rem;
     position: relative;
   }
-  header nav ul li:hover {
-    width: 50%;
-    transform: translateX(100%);
-    font-size: 23px;
-    transition: 0.5s;
-  }
   header nav ul li a {
     font-size: 17px;
     color: #206f30;
-    transition: 0.3s;
+    transition: 0.8s;
   }
   header nav ul li a:hover {
-    color: #43db61;
-  }
-  header nav ul li a:before {
-    content: "";
-    width: 0px;
-    height: 2px;
-    background: #206f30;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transition: 0.7s;
-    width: 50%;
-    transform: translateX(100%);
+    color: #3fca3a;
+    transform: scale(1.5);
+    font-size: 20px;
+    font-weight: 600;
+    filter: brightness(150%);
   }
   .li-inicio {
     display: none;
@@ -824,6 +799,10 @@ footer {
   }
   .logo-chico {
     width: 8rem;
+  }
+  .div-logo-redes a svg {
+    width: 50px;
+    height: 50px;
   }
   main {
     margin-top: 260px;

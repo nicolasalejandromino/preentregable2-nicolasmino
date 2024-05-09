@@ -18,8 +18,10 @@
     border-radius: 0;
     width: 25rem;
     margin: 5px;
-    &:hover{
-        transform: scale(1.1);
+    a{
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 .card-titulo{

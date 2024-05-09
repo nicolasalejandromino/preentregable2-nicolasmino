@@ -24,30 +24,16 @@
                 li{
                     margin: 0 2.8rem;
                     position: relative;
-                    &:hover{
-                        width: 50%;
-                        transform: translateX(100%);
-                        font-size: 23px;
-                        transition: .5s;
-                    }
                     a{
                         font-size: 17px;
                         color: #206f30;
-                        transition: 0.3s;
+                        transition: 0.8s;
                         &:hover{
-                            color: #43db61;
-                        }
-                        &:before{
-                            content: '';
-                            width: 0px;
-                            height: 2px;
-                            background: #206f30;
-                            position: absolute;
-                            top: 100%;
-                            left: 0;
-                            transition: .7s;
-                            width: 50%;
-                            transform: translateX(100%);
+                            color: #3fca3a;
+                            transform: scale(1.5);
+                            font-size: 20px;
+                            font-weight: 600;
+                            filter: brightness(150%);
                         }
                     }
                 }
@@ -76,6 +62,14 @@
     }
     .logo-chico{
         width: 8rem;
+    }
+    .div-logo-redes{
+        a{
+            svg{
+                width: 50px;
+                height: 50px;
+            }
+        }
     }
     //MAIN INDEX
     main{
